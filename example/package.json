@@ -1,0 +1,39 @@
+{
+  "name": "react-native-trustbuilder-example",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "build:android": "react-native build-android --extra-params \"--no-daemon --console=plain -PreactNativeArchitectures=arm64-v8a\"",
+    "build:ios": "react-native build-ios --mode Debug",
+    "web": "vite",
+    "build:web": "vite build"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-native": "0.73.11",
+    "react-native-config": "^1.5.1",
+    "react-native-trustbuilder": "workspace:*",
+    "react-native-web": "~0.21.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@babel/preset-env": "^7.20.0",
+    "@babel/runtime": "^7.20.0",
+    "@react-native/babel-preset": "0.73.21",
+    "@react-native/metro-config": "0.73.5",
+    "@react-native/typescript-config": "0.73.1",
+    "@types/react": "^18.2.6",
+    "@vitejs/plugin-react": "^5.0.0",
+    "react-native-builder-bob": "^0.41.0",
+    "react-native-monorepo-config": "^0.3.3",
+    "vite": "^7.1.1",
+    "vite-plugin-commonjs": "^0.10.4"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

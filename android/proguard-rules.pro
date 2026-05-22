@@ -1,0 +1,2 @@
+-keep class com.inwebo.iwlib.** { *; }
+-dontwarn com.inwebo.iwlib.**
