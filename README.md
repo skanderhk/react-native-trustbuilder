@@ -1,11 +1,11 @@
-# react-native-trustbuilder
+# react-native-mfa-trustbuilder
 
 Trustbuilder MFA SDK for React Native. Provides multi-factor authentication capabilities including activation, OTP generation, biometric authentication, push notifications, and transaction sealing.
 
 ## Installation
 
 ```sh
-npm install react-native-trustbuilder
+npm install react-native-mfa-trustbuilder
 ```
 
 ### iOS
@@ -21,7 +21,7 @@ No additional steps required.
 ## Usage
 
 ```ts
-import { trustbuilder, TrustbuilderError } from 'react-native-trustbuilder';
+import { trustbuilder, TrustbuilderError } from 'react-native-mfa-trustbuilder';
 
 // Initialize (call once at app startup)
 const result = trustbuilder.initialize({
@@ -53,11 +53,11 @@ Initialize the Trustbuilder SDK.
 
 ```ts
 trustbuilder.initialize({
-  macId: 'your_maccess_id',        // Required
+  macId: 'your_maccess_id', // Required
   server: 'https://www.myinwebo.com', // Default
-  hostVersion: 'my-app-1.0.0',     // Default: 'react-native-trustbuilder-0.1.0'
-  timeout: 60000,                  // Default: 60000ms
-  lang: 'en',                      // 'en' | 'fr', Default: 'en'
+  hostVersion: 'my-app-1.0.0', // Default: 'react-native-mfa-trustbuilder-0.1.0'
+  timeout: 60000, // Default: 60000ms
+  lang: 'en', // 'en' | 'fr', Default: 'en'
 });
 ```
 
@@ -168,30 +168,30 @@ try {
   await trustbuilder.generateOnlineOtp('1234');
 } catch (error) {
   if (error instanceof TrustbuilderError) {
-    console.log(error.code);      // Numeric error code
-    console.log(error.codeName);  // e.g., 'NETWORK', 'CODE', 'ACCESS'
-    console.log(error.message);   // Human-readable message
+    console.log(error.code); // Numeric error code
+    console.log(error.codeName); // e.g., 'NETWORK', 'CODE', 'ACCESS'
+    console.log(error.message); // Human-readable message
   }
 }
 ```
 
 ### Error Codes
 
-| Code | Name | Description |
-|------|------|-------------|
-| 0 | OK | No error |
-| 1 | NETWORK | Network or server unreachable |
-| 2 | CODE | Activation code is incorrect |
-| 3 | SN | Syntax error |
-| 4 | ACCESS | Access refused |
-| 5 | VERSION | Version error |
-| 7 | BLOCKED | Account is blocked |
-| 14 | FORBIDDEN | Forbidden operation |
-| 15 | PINREFUSED | Bad PIN format |
-| 16 | TIMEOUT | Timeout expired |
-| 26 | BIOKEY | Device locked due to biokey errors |
-| 27 | DESYNCHRONIZED | Device desynchronized |
-| 999 | OTHER | Unknown error |
+| Code | Name           | Description                        |
+| ---- | -------------- | ---------------------------------- |
+| 0    | OK             | No error                           |
+| 1    | NETWORK        | Network or server unreachable      |
+| 2    | CODE           | Activation code is incorrect       |
+| 3    | SN             | Syntax error                       |
+| 4    | ACCESS         | Access refused                     |
+| 5    | VERSION        | Version error                      |
+| 7    | BLOCKED        | Account is blocked                 |
+| 14   | FORBIDDEN      | Forbidden operation                |
+| 15   | PINREFUSED     | Bad PIN format                     |
+| 16   | TIMEOUT        | Timeout expired                    |
+| 26   | BIOKEY         | Device locked due to biokey errors |
+| 27   | DESYNCHRONIZED | Device desynchronized              |
+| 999  | OTHER          | Unknown error                      |
 
 ## Contributing
 

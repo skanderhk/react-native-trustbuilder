@@ -16,7 +16,7 @@ import type {
 } from './types';
 
 const LINKING_ERROR =
-  `The package 'react-native-trustbuilder' doesn't seem to be linked. Make sure: \n\n` +
+  `The package 'react-native-mfa-trustbuilder' doesn't seem to be linked. Make sure: \n\n` +
   Platform.select({ ios: "- You have run 'pod install'\n", default: '' }) +
   '- You rebuilt the app after installing the package\n' +
   '- You are not using Expo managed workflow\n';
@@ -79,7 +79,7 @@ class Trustbuilder {
     const configStr = JSON.stringify({
       macId: config.macId,
       server: config.server || 'https://www.myinwebo.com',
-      hostVersion: config.hostVersion || 'react-native-trustbuilder-0.1.0',
+      hostVersion: config.hostVersion || 'react-native-mfa-trustbuilder-0.1.0',
       timeout: config.timeout || 60000,
       lang: config.lang === 'fr' ? '2' : '1',
     });

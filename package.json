@@ -1,5 +1,5 @@
 {
-  "name": "react-native-trustbuilder",
+  "name": "react-native-mfa-trustbuilder",
   "version": "0.1.0",
   "description": "Trustbuilder MFA SDK for React Native",
   "main": "./lib/module/index.js",
@@ -32,7 +32,7 @@
     "!**/.*"
   ],
   "scripts": {
-    "example": "yarn workspace react-native-trustbuilder-example",
+    "example": "yarn workspace react-native-mfa-trustbuilder-example",
     "clean": "del-cli android/build example/android/build example/android/app/build example/ios/build lib",
     "prepare": "bob build",
     "typecheck": "tsc",
@@ -54,14 +54,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/skanderhk/react-native-trustbuilder.git"
+    "url": "git+https://github.com/skanderhk/react-native-mfa-trustbuilder.git"
   },
   "author": "skanderhk <skander.hkacem@gmail.com> (https://github.com/skanderhk)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/skanderhk/react-native-trustbuilder/issues"
+    "url": "https://github.com/skanderhk/react-native-mfa-trustbuilder/issues"
   },
-  "homepage": "https://github.com/skanderhk/react-native-trustbuilder#readme",
+  "homepage": "https://github.com/skanderhk/react-native-mfa-trustbuilder#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },

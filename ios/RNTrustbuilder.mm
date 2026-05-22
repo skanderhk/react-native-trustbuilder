@@ -54,7 +54,7 @@ RCT_EXPORT_MODULE()
 
   NSString *macId = configDict[@"macId"];
   NSString *server = configDict[@"server"] ?: @"https://www.myinwebo.com";
-  NSString *hostVersion = configDict[@"hostVersion"] ?: @"react-native-trustbuilder-0.1.0";
+  NSString *hostVersion = configDict[@"hostVersion"] ?: @"react-native-mfa-trustbuilder-0.1.0";
   NSInteger timeout = [configDict[@"timeout"] integerValue] ?: 60000;
   NSString *lang = configDict[@"lang"] ?: @"1";
 

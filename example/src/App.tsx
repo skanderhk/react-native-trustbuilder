@@ -9,7 +9,7 @@ import {
   Alert,
   View,
 } from 'react-native';
-import { trustbuilder, TrustbuilderError } from 'react-native-trustbuilder';
+import { trustbuilder, TrustbuilderError } from 'react-native-mfa-trustbuilder';
 
 const DEFAULT_MAC_ID = 'example-mac-id-12345';
 const DEFAULT_SERVER = 'https://www.myinwebo.com';

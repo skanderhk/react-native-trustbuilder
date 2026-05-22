@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.authors      = package["author"]
 
   s.platforms    = { :ios => "13.4" }
-  s.source       = { :git => "https://github.com/skanderhk/react-native-trustbuilder.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/skanderhk/react-native-mfa-trustbuilder.git", :tag => "#{s.version}" }
 
   s.source_files = "ios/**/*.{h,m,mm,swift,cpp}"
   s.private_header_files = "ios/**/*.h"

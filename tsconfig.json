@@ -2,7 +2,7 @@
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
-      "react-native-trustbuilder": ["./src/index"]
+      "react-native-mfa-trustbuilder": ["./src/index"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,

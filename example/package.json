@@ -1,5 +1,5 @@
 {
-  "name": "react-native-trustbuilder-example",
+  "name": "react-native-mfa-trustbuilder-example",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -16,7 +16,7 @@
     "react-dom": "18.2.0",
     "react-native": "0.73.11",
     "react-native-config": "^1.5.1",
-    "react-native-trustbuilder": "workspace:*",
+    "react-native-mfa-trustbuilder": "workspace:*",
     "react-native-web": "~0.21.1"
   },
   "devDependencies": {
